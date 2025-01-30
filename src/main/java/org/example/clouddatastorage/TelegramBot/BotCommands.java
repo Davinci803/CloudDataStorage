@@ -274,8 +274,7 @@ public class BotCommands extends TelegramLongPollingBot {
 
         } catch (Exception e) {
             System.out.println("Ошибка при сохранении файла: " + e.getMessage());
-            e.printStackTrace(); // вообще это записывается в логи примерно так log.error(message, exception)
-            // хочется отличать исключения из бд и передавать в логи контекст исключения, например значения полей объектов
+            e.printStackTrace();
         }
 
     }
@@ -298,11 +297,11 @@ public class BotCommands extends TelegramLongPollingBot {
 
     @Override
     public String getBotToken(){
-        return "7290870977:AAFJShzNhSPslBEtsmGKZRffoaUaqK025ok";
-    } // это пиздец
+        return "";
+    }
 
     @Override
     public String getBotUsername(){
         return "CloudDataStorage";
-    } // это пиздец
+    }
 }
